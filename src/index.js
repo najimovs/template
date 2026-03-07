@@ -18,7 +18,12 @@ app.set( "view engine", "html" )
 
 app.set( "views", path.join( __dirname, "views" ) )
 
-app.get( "/", ( _, res ) => res.render( "index", { title: "Welcome" } ) )
+app.get( "/", ( _, res ) => res.render( "index" ) )
+
+app.get( "/elements", ( _, res ) => res.render( "elements" ) )
+app.get( "/left-sidebar", ( _, res ) => res.render( "left-sidebar" ) )
+app.get( "/right-sidebar", ( _, res ) => res.render( "right-sidebar" ) )
+app.get( "/no-sidebar", ( _, res ) => res.render( "no-sidebar" ) )
 
 //
 
